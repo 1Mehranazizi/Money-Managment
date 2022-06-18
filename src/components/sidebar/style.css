@@ -76,7 +76,7 @@
 .sidebar_navbar .nav-item.active a::before {
   content: "";
   position: absolute;
-  right: -12px;
+  right: -14px;
   top: -50px;
   width: 50px;
   height: 50px;
@@ -88,7 +88,7 @@
 .sidebar_navbar .nav-item.active a::after {
   content: "";
   position: absolute;
-  right: -12px;
+  right: -14px;
   top: 54px;
   width: 50px;
   height: 50px;
@@ -105,10 +105,15 @@
 @media (max-width: 990px) {
   .sidebar {
     position: fixed;
+    z-index: 100;
     width: 280px;
-    transition: left .3s ease;
+    transition: left 0.3s ease;
     top: 0;
     bottom: 0;
     left: -100%;
+  }
+
+  .sidebar.open {
+    left: 0;
   }
 }

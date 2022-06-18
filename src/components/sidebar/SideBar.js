@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import "./style.css";
@@ -14,14 +14,9 @@ import WalletIcon from "../../assets/svg/wallet.svg";
 import HistoryIcon from "../../assets/svg/history.svg";
 import SeyyingIcon from "../../assets/svg/setting.svg";
 
-const SideBar = () => {
-  const [open, setOpen] = useState(false);
-
-  const openHandler = () => {
-    setOpen(!open);
-  };
+const SideBar = ({ openMenuHandler, openMenu }) => {
   return (
-    <div className="sidebar">
+    <div className={openMenu ? "sidebar open" : "sidebar"}>
       <div className="sidebar_container">
         <div className="user-profile">
           <img src={UserImage} alt="user profile" />
@@ -38,7 +33,7 @@ const SideBar = () => {
                   ? "nav-item active"
                   : "nav-item"
               }
-              onClick={openHandler}
+              onClick={openMenuHandler}
             >
               <Link to="/home">
                 <img src={HomeIcon} alt="home-icon" />
@@ -51,7 +46,7 @@ const SideBar = () => {
                   ? "nav-item active"
                   : "nav-item"
               }
-              onClick={openHandler}
+              onClick={openMenuHandler}
               id="ovweview"
             >
               <Link to="/overview">
@@ -65,7 +60,7 @@ const SideBar = () => {
                   ? "nav-item active"
                   : "nav-item"
               }
-              onClick={openHandler}
+              onClick={openMenuHandler}
               id="payments"
             >
               <Link to="/payments">
@@ -79,7 +74,7 @@ const SideBar = () => {
                   ? "nav-item active"
                   : "nav-item"
               }
-              onClick={openHandler}
+              onClick={openMenuHandler}
               id="transactions"
             >
               <Link to="/transactions">
@@ -93,7 +88,7 @@ const SideBar = () => {
                   ? "nav-item active"
                   : "nav-item"
               }
-              onClick={openHandler}
+              onClick={openMenuHandler}
               id="history"
             >
               <Link to="/history">
@@ -107,7 +102,7 @@ const SideBar = () => {
                   ? "nav-item active"
                   : "nav-item"
               }
-              onClick={openHandler}
+              onClick={openMenuHandler}
               id="setting"
             >
               <Link to="/setting">
