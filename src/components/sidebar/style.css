@@ -1,0 +1,114 @@
+.sidebar {
+  background: royalblue;
+  border-radius: 0 40px 40px 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar_container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.user-profile {
+  margin-top: 1.3rem;
+  display: flex;
+}
+
+.user-profile img {
+  width: 60px;
+  border-radius: 20px;
+}
+
+.user-information {
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.username_profile {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.userjob_profile {
+  color: #fff;
+  font-size: 13px;
+  display: inline-block;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+.sidebar_navbar {
+  margin: 3rem 0 0 2rem;
+}
+
+.sidebar_navbar .nav-item {
+  padding-left: 30px;
+  height: 54px;
+  line-height: 54px;
+  margin-bottom: 1rem;
+  border-radius: 40px 0 0 40px;
+}
+
+.sidebar_navbar .nav-item a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+}
+
+.sidebar_navbar .nav-item a img {
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+.sidebar_navbar .nav-item.active {
+  background-color: #f8f9fb;
+}
+
+.sidebar_navbar .nav-item.active a {
+  color: rgba(102, 102, 102, 0.74);
+  font-weight: bold;
+}
+
+.sidebar_navbar .nav-item.active a::before {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background: royalblue;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px #f8f9fb;
+}
+
+.sidebar_navbar .nav-item.active a::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 54px;
+  width: 50px;
+  height: 50px;
+  background: royalblue;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px #f8f9fb;
+}
+
+.sidebar_navbar .nav-item.active a img {
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+@media (max-width: 990px) {
+  .sidebar {
+    position: fixed;
+    width: 280px;
+    transition: left .3s ease;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+  }
+}
