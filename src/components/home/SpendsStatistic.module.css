@@ -1,0 +1,35 @@
+.card {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgb(120 120 120 / 30%);
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.7rem;
+}
+
+.card_header h2 {
+  font-size: 1.2rem;
+  color: #474747;
+  margin-bottom: 0.6rem;
+}
+
+.set_date {
+  background-color: rgba(71, 78, 219, 0.1);
+  padding: 10px;
+  border-radius: 30px;
+  align-self: flex-start;
+}
+
+.select_date {
+  border: none;
+  font-size: 14px;
+  color: #474edb;
+  background-color: rgba(71, 78, 219, 0.01);
+  outline: none;
+  cursor: pointer;
+}
