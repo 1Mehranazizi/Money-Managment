@@ -1,7 +1,7 @@
 .sidebar {
   background: royalblue;
   border-radius: 0 40px 40px 0;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 

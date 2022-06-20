@@ -12,12 +12,12 @@ export const columnChart = {
   options: {
     chart: {
       type: "bar",
-      height: 280,
+      height: 250,
     },
     plotOptions: {
       bar: {
         horizontal: false,
-        columnWidth: "55%",
+        columnWidth: "45%",
         endingShape: "rounded",
       },
     },
@@ -42,6 +42,16 @@ export const columnChart = {
         "Oct",
       ],
     },
+    responsive: [
+      {
+        breakpoint: 560,
+        options: {
+          chart: {
+            width: 270,
+          },
+        },
+      },
+    ],
     fill: {
       opacity: 1,
     },
@@ -52,5 +62,56 @@ export const columnChart = {
         },
       },
     },
+  },
+};
+
+export const pieCharts = {
+  series: [32, 26, 10, 9, 6, 6, 5, 6],
+  options: {
+    chart: {
+      width: 380,
+      type: "donut",
+      id: "pie-chart",
+    },
+    plotOptions: {
+      pie: {
+        startAngle: -90,
+        endAngle: 270,
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    fill: {
+      type: "gradient",
+    },
+    legend: {
+      formatter: function (val, opts) {
+        return `${opts.w.globals.series[opts.seriesIndex]}% ` + val;
+      },
+    },
+    labels: [
+      "Grosery",
+      "Restaurants",
+      "Sport",
+      "Travels",
+      "Utility",
+      "Fun",
+      "Medicine",
+      "Other",
+    ],
+    responsive: [
+      {
+        breakpoint: 560,
+        options: {
+          chart: {
+            width: 270,
+          },
+          legend: {
+            position: "bottom",
+          },
+        },
+      },
+    ],
   },
 };

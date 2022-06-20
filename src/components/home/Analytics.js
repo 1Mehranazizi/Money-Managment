@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import ReactApexChart from "react-apexcharts";
+
+//Data
+import { pieCharts } from "../../data/data";
+
 import "./styles.css";
 
-//Date
-import { columnChart } from "../../data/data";
-
-const SpendsStatistic = () => {
-  const [date, setDate] = useState("year");
+const Analytics = () => {
+  const [date, setDate] = useState("jan");
 
   return (
     <div className="chart-card">
@@ -20,23 +21,26 @@ const SpendsStatistic = () => {
             value={date}
             onChange={(e) => setDate(e.target.selected)}
           >
-            <option value="year">Year</option>
-            <option value="month">Month</option>
-            <option value="week">Week</option>
-            <option value="day">Day</option>
+            <option value="jan">Jan</option>
+            <option value="feb">Feb</option>
+            <option value="mar">Mar</option>
+            <option value="apr">Apr</option>
           </select>
         </div>
       </div>
+      <div className="total">
+        
+      </div>
       <div>
         <ReactApexChart
-          options={columnChart.options}
-          series={columnChart.series}
-          type="bar"
-          height={250}
+          options={pieCharts.options}
+          series={pieCharts.series}
+          type="donut"
+          width={400}
         />
       </div>
     </div>
   );
 };
 
-export default SpendsStatistic;
+export default Analytics;

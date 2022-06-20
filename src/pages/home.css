@@ -4,3 +4,15 @@
     gap: 2rem;
     margin-top: 2rem;
 }
+
+.home-container .left-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (max-width:768px) {
+    .home-container {
+        grid-template-columns: 1fr;
+    }
+}

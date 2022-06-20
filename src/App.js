@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import SideBar from "./components/sidebar/SideBar";
 import Header from "./components/header/Header";
@@ -21,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/overview" element={<OverView />} />
+          <Route path="/*" element={<Navigate to="/home" />} />
         </Routes>
       </div>
     </div>
