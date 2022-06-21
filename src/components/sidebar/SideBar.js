@@ -15,6 +15,7 @@ import HistoryIcon from "../../assets/svg/history.svg";
 import SeyyingIcon from "../../assets/svg/setting.svg";
 
 const SideBar = ({ openMenuHandler, openMenu }) => {
+  
   return (
     <div className={openMenu ? "sidebar open" : "sidebar"}>
       <div className="sidebar_container">
@@ -29,13 +30,13 @@ const SideBar = ({ openMenuHandler, openMenu }) => {
           <ul className="sidebar_nav">
             <li
               className={
-                window.location.pathname === "/home"
+                window.location.pathname === "/"
                   ? "nav-item active"
                   : "nav-item"
               }
               onClick={openMenuHandler}
             >
-              <Link to="/home">
+              <Link to="/">
                 <img src={HomeIcon} alt="home-icon" />
                 Home
               </Link>

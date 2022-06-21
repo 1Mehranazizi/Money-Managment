@@ -1,6 +1,7 @@
 import React from "react";
 import Analytics from "../components/home/Analytics";
 import SpendsStatistic from "../components/home/SpendsStatistic";
+import Transactions from "../components/home/Transactions";
 
 import "./home.css";
 
@@ -11,7 +12,9 @@ const Home = () => {
         <SpendsStatistic />
         <Analytics />
       </div>
-      <div className="right-content"></div>
+      <div className="right-content">
+        <Transactions />
+      </div>
     </div>
   );
 };

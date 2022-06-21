@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import "./styles.css";
 
 //Date
 import { columnChart } from "../../data/data";
@@ -9,12 +8,12 @@ const SpendsStatistic = () => {
   const [date, setDate] = useState("year");
 
   return (
-    <div className="chart-card">
-      <div className="chart-card__Header">
+    <div className="card">
+      <div className="card__Header">
         <div>
           <h2>Spends Statistic</h2>
         </div>
-        <div className="set_date">
+        <div className="card__button">
           <select
             className="select_date"
             value={date}

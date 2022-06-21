@@ -10,12 +10,12 @@ const Analytics = () => {
   const [date, setDate] = useState("jan");
 
   return (
-    <div className="chart-card">
-      <div className="chart-card__Header">
+    <div className="card">
+      <div className="card__Header">
         <div>
           <h2>Spends Statistic</h2>
         </div>
-        <div className="set_date">
+        <div className="card__button">
           <select
             className="select_date"
             value={date}
@@ -28,9 +28,7 @@ const Analytics = () => {
           </select>
         </div>
       </div>
-      <div className="total">
-        
-      </div>
+      <div className="total"></div>
       <div>
         <ReactApexChart
           options={pieCharts.options}

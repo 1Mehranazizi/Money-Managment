@@ -19,9 +19,9 @@ function App() {
       <div className="page">
         <Header openMenuHandler={openMenuHandler} openMenu={openMenu} />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/overview" element={<OverView />} />
-          <Route path="/*" element={<Navigate to="/home" />} />
+          <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </div>

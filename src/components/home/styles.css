@@ -1,36 +1,127 @@
-.chart-card {
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgb(120 120 120 / 30%);
-    padding: 2rem;
-    border-radius: 25px;
-  }
-  
-  .chart-card__Header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.7rem;
-  }
-  
-  .chart-card__Header h2 {
-    font-size: 1.2rem;
-    color: #474747;
-    margin-bottom: 0.6rem;
-  }
-  
-  .set_date {
-    background-color: rgba(71, 78, 219, 0.1);
-    padding: 10px;
-    border-radius: 30px;
-    align-self: flex-start;
-  }
-  
-  .select_date {
-    border: none;
-    font-size: 14px;
-    color: #474edb;
-    background-color: rgba(71, 78, 219, 0.01);
-    outline: none;
-    cursor: pointer;
-  }
-  
+/* Global Pages Styles */
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgb(120 120 120 / 30%);
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.card__Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.7rem;
+}
+
+.card__Header h2 {
+  font-size: 1.2rem;
+  color: #474747;
+  margin-bottom: 0.6rem;
+}
+
+.card__button {
+  background-color: rgba(71, 78, 219, 0.1);
+  padding: 10px;
+  border-radius: 30px;
+  align-self: flex-start;
+}
+
+.select_date {
+  border: none;
+  font-size: 14px;
+  color: #474edb;
+  background-color: rgba(71, 78, 219, 0.01);
+  outline: none;
+  cursor: pointer;
+}
+
+.edit-button {
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.visa-card {
+  background: #020024;
+  background: linear-gradient(120deg, #020024 0%, #ff6200 0%, #f98a6f 100%);
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgb(120 120 120 / 30%);
+  padding: 2rem;
+}
+
+.title-visa-card {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.number-card {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.date-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Transactions Styles */
+
+.trans {
+  margin-top: 2rem;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.tranc-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tranc-child:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.left__trans-child {
+  display: flex;
+  align-items: center;
+}
+
+.transactions-icon {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 60px;
+  color: #686de0;
+  background-color: rgba(71, 78, 219, 0.1);
+  border-radius: 20px;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.transactions-info p {
+  font-weight: 600;
+  color: #474747;
+  margin-bottom: 8px;
+}
+
+.transactions-info small {
+  color: #979797;
+}
+
+.right__trans-child p {
+  color: #d13131;
+  font-weight: 600;
+}
+
+.h-100 {
+  height: 100%;
+}
