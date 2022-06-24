@@ -22,7 +22,6 @@
 
 .card__button {
   background-color: rgba(71, 78, 219, 0.1);
-  padding: 10px;
   border-radius: 30px;
   align-self: flex-start;
 }
@@ -34,10 +33,16 @@
   background-color: rgba(71, 78, 219, 0.01);
   outline: none;
   cursor: pointer;
+  padding: 10px;
+}
+
+.select_date option {
+  font-size: 12px;
 }
 
 .edit-button {
-  padding: 0 12px;
+  display: inline-block;
+  padding: 10px 30px;
   cursor: pointer;
 }
 

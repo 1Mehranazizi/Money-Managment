@@ -18,17 +18,17 @@ const Transactions = () => {
           </span>
         </div>
       </div>
-      <div class="visa-card">
-        <h4 class="title-visa-card">Universal Bank</h4>
-        <div class="number-card">
+      <div className="visa-card">
+        <h4 className="title-visa-card">Universal Bank</h4>
+        <div className="number-card">
           <small>8888</small>
           <small>1111</small>
           <small>3333</small>
           <small>7777</small>
         </div>
-        <div class="date-card">
-          <small class="date">05/24</small>
-          <h2 class="visa">VISA</h2>
+        <div className="date-card">
+          <small className="date">05/24</small>
+          <h2 className="visa">VISA</h2>
         </div>
       </div>
       <div className="trans">
